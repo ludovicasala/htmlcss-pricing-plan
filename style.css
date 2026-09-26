@@ -1,0 +1,71 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stili generali del corpo */
+body {
+    font-family: sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: justify;
+}
+
+/* Contenitore principale */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0 0 0;
+}
+
+/* Stile delle card */
+.card-pricing {
+    width: calc((100% - 60px) / 3);
+    border-radius: 24px;
+    background-color: #ffffff;
+    /* Sintassi: box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    box-shadow: 0px 20px 30px -5px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 35px;
+}
+
+.card-pricing-selezionato {
+    width: calc((100% - 60px) / 3);
+    border-radius: 24px;
+    background-color: rgb(106, 0, 255);
+    /* Sintassi: box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    box-shadow: 0px 20px 30px -5px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 35px;
+}
+
+.prezzo {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+.sconto {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+.scegli-piano {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.differenze {
+    font-weight: 400;
+    font-size: 16px;
+}
