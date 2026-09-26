@@ -12,12 +12,25 @@ body {
     margin: 0 auto;
 }
 
+/* Contenitore header*/
 header {
-    display: inline;
+    margin-top: 50px;
 }
 
+/* 1. Spinge h1 a sinistra e .mese-anno a destra */
+.our-pricing-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* 2. Affianca in orizzontale "Monthly ●" e "Yearly ○" */
 .mese-anno {
-    display: inline;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* spazio tra le due voci */
 }
 
 h1 {
@@ -30,7 +43,7 @@ h1 {
     font-weight: 300;
 }
 
-/* Contenitore principale */
+/* Contenitore main */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +52,7 @@ main {
     margin: 50px 0 0 0;
 }
 
-/* Stile delle card */
+/* Stile delle card bianche */
 .card-pricing {
     width: calc((100% - 60px) / 3);
     border-radius: 24px;
@@ -49,6 +62,57 @@ main {
     border-radius: 8px;
     padding: 35px;
 }
+
+.livello {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.prezzo {
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    align-items: baseline;
+}
+
+.testo-prezzo {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.sconto {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    padding: 0px 0 30px 0;
+    align-items: center;
+}
+
+.testo-sconto {
+    border-radius: 6px;
+    background-color: rgb(225, 225, 225);
+    padding: 8px;
+}
+
+.scegli-piano {
+    border-radius: 15px;
+    background-color: rgb(106, 0, 255);
+    color: #ffffff;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.differenze {
+    padding: 30px 0 0px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+/* Stile delle card viola */
 
 .card-pricing-selezionato {
     width: calc((100% - 60px) / 3);
@@ -60,38 +124,6 @@ main {
     padding: 35px;
 }
 
-.livello {
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.prezzo {
-    padding: 20px 0 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 1px;
-}
-
-.sconto {
-    display: flex;
-    justify-content: center;
-    gap: 1px;
-}
-
-.scegli-piano {
-    padding: 20px 0 20px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.differenze {
-    font-weight: 400;
-    font-size: 16px;
-}
-
-
-
-
 .testo-selezionato {
     font-size: 14px;
     color: #ffffff;
@@ -100,34 +132,51 @@ main {
 
 .livello-selezionato {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     color: #ffffff;
 }
 
 .prezzo-selezionato {
-    padding: 20px 0 20px 0;
+    padding: 30px 0 30px 0;
     display: flex;
     justify-content: center;
-    gap: 1px;
+    gap: 2px;
     color: #ffffff;
+    align-items: baseline;
+}
+
+.testo-prezzo-selezionato {
+    font-size: 60px;
+    font-weight: 600;
 }
 
 .sconto-selezionato {
     display: flex;
     justify-content: center;
-    gap: 1px;
-    color: #ffffff;
+    gap: 6px;
+    padding: 0px 0 30px 0;
+    align-items: center;
+}
+
+.testo-sconto-selezionato {
+    border-radius: 6px;
+    background-color: rgb(225, 225, 225);
+    padding: 8px;
 }
 
 .scegli-piano-selezionato {
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: rgb(106, 0, 255);
     padding: 20px 0 20px 0;
     display: flex;
     justify-content: center;
-    color: #ffffff;
 }
 
 .differenze-selezionato {
+    padding: 30px 0 0px 0;
     font-weight: 400;
     font-size: 16px;
     color: #ffffff;
+    line-height: 2;
 }
