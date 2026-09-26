@@ -13,7 +13,21 @@ body {
 }
 
 header {
-    text-align: justify;
+    display: inline;
+}
+
+.mese-anno {
+    display: inline;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.testo {
+    font-size: 14px;
+    color: gray;
+    font-weight: 300;
 }
 
 /* Contenitore principale */
@@ -46,6 +60,11 @@ main {
     padding: 35px;
 }
 
+.livello {
+    font-size: 30px;
+    font-weight: 500;
+}
+
 .prezzo {
     padding: 20px 0 20px 0;
     display: flex;
@@ -68,4 +87,47 @@ main {
 .differenze {
     font-weight: 400;
     font-size: 16px;
+}
+
+
+
+
+.testo-selezionato {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.livello-selezionato {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.prezzo-selezionato {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    color: #ffffff;
+}
+
+.sconto-selezionato {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    color: #ffffff;
+}
+
+.scegli-piano-selezionato {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.differenze-selezionato {
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
 }
