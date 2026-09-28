@@ -14,7 +14,7 @@ body {
 
 /* Contenitore header*/
 header {
-    padding: 10px;
+    padding: 15px 20px 0 20px;
 }
 
 /* 1. Spinge h1 a sinistra e .mese-anno a destra */
@@ -115,7 +115,7 @@ main {
 /* Stile delle card viola */
 
 .card-pricing-selezionato {
-    width: calc(100% / 3);
+    width: 300px;
     border-radius: 24px;
     background-color: rgb(106, 0, 255);
     /* Sintassi: box-shadow: offset-x offset-y blur-radius spread-radius color; */
